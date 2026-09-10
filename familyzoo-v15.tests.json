@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "story": "familyzoo-v15",
+  "seed": 42,
+  "cards": [
+    {
+      "type": "opening",
+      "assertions": {
+        "channels": [
+          {
+            "id": "info.title",
+            "is": "Family Zoo (v15 — Scoring & Endgame)"
+          },
+          {
+            "id": "info.description",
+            "is": "Sharpee tutorial step 15 — `use scoring`, `score ... worth`, and `award`."
+          }
+        ]
+      }
+    },
+    {
+      "type": "boot",
+      "assertions": {
+        "contains": [
+          "Zoo Entrance",
+          "Your family piles out of the car, buzzing with excitement — a whole day at the zoo! You st"
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "score",
+      "assertions": {
+        "contains": [
+          "You have scored 0 out of a possible 80."
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "south",
+      "assertions": {
+        "contains": [
+          "Main Path",
+          "A wide gravel path winds through the heart of the zoo. Colorful direction signs point ever"
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "east",
+      "assertions": {
+        "contains": [
+          "Petting Zoo",
+          "A cheerful open-air enclosure that smells of warm hay and fur. A feed dispenser is mounted"
+        ]
+      }
+    },
+    {
+      "type": "turn",
+      "command": "score",
+      "assertions": {
+        "contains": [
+          "You have scored 5 out of a possible 80."
+        ]
+      }
+    }
+  ]
+}

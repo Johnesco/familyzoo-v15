@@ -1,14 +1,4 @@
-wait
-wait
-wait
-wait
-wait
+score
 south
 east
-wait
-wait
-wait
-wait
-wait
-take feed
-feed goats
+score

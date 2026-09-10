@@ -3,7 +3,7 @@ story
   authors:
     John Googol
   id: familyzoo-v15
-  ifid: 8C67CDA4-BBAC-4F15-8903-CBDA49545A49
+  ifid: E4BD4DCE-693D-4068-A3BB-EC203A25B83C
   story-version: 0.0.2
   description: Sharpee tutorial step 15 — `use scoring`, `score ... worth`, and `award`.
   use scoring
@@ -59,11 +59,10 @@ create the Aviary
   west to the Gift Shop
   score visit worth 5
 
-  You step inside a soaring mesh dome. Brilliantly colored parrots
-  chatter from rope perches, and a toucan eyes you curiously from a
-  branch overhead. A small waterfall splashes into a stone basin. An
-  info plaque hangs near the entrance. The gift shop is to the west. The
-  main path is back to the east.
+  You step inside a soaring mesh dome. A toucan eyes you curiously from a
+  branch overhead, and rope perches crisscross the space. A small
+  waterfall splashes into a stone basin. A plaque hangs near the
+  entrance. The gift shop is to the west. The main path is back to the east.
 
   after the player entering
     award visit

@@ -9,8 +9,8 @@
  * A non-empty map means the bundle carries author-written executable code,
  * not merely story data (D3).
  */
-import * as __hatch0 from "../chord-extras.ts";
+
 
 export const hatchModules: Record<string, Record<string, unknown>> = {
-  "./chord-extras.ts": __hatch0 as unknown as Record<string, unknown>,
+
 };

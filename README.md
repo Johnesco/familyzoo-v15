@@ -1,32 +1,31 @@
-# Family Zoo — v15 — Timed Events (Daemons & Fuses)
+# Family Zoo — v15: Scoring & Endgame
 
-The PA system makes scheduled announcements, feeding time arrives on a timer, and goats bleat until fed. Introduces the SchedulerPlugin and its two primitives — daemons that tick every turn and fuses that count down.
+Points for seeing the zoo. `use scoring` turns on the SCORE command, rooms carry what a visit is worth, and `award` banks it once.
 
-Step 15 of the [Family Zoo](https://github.com/Johnesco/familyzoo) tutorial — a progressive walkthrough of the [Sharpee](https://sharpee.net) TypeScript interactive fiction engine, from a single room to a full multi-file story.
+Step 15 of sixteen in the [Family Zoo](https://github.com/Johnesco/familyzoo) tutorial for [Chord](https://sharpee.net/chord/), the authoring language of the [Sharpee](https://sharpee.net) interactive fiction engine.
 
-## What this step teaches
+## What this step adds
 
-- SchedulerPlugin registration in onEngineReady
-- Daemon interface with condition() and run() that returns events
-- Fuse interface with turns, repeat, and originalTurns for re-arming
-- game.message events with narrate: true for auto-rendered text
-- Gotchas around turn offsets and the fuse skipNextTick behavior
+- `use scoring` in the story header
+- `score visit worth 5` on a room
+- `award visit` inside `after the player entering`
+- Why awarding is idempotent — revisiting pays nothing
+- The SCORE command, for free
 
-## Playing
+## The source
 
-Open `play.html`, or preview the folder:
+The whole step is one file: [`familyzoo-v15.story`](./familyzoo-v15.story) — the step before it plus the ideas above. The chapter that walks through it is [`docs/v15-scoring-endgame.md`](./docs/v15-scoring-endgame.md).
 
-```bash
-python -m http.server 8000 --directory familyzoo-v15
-```
-
-## Building
-
-This is a **frozen 0.9.x TypeScript version**. The built player in this folder is the published artifact; it is re-laid from `browser/` by the workspace build:
+## Playing and testing
 
 ```bash
-python ../tools/build.py familyzoo-v15
-python C:/code/ifhub/tools/ship.py familyzoo-v15
+npx sharpee play
+npx sharpee test          # replays familyzoo-v15.tests.json
+python ../tools/build.py familyzoo-v15 --force
 ```
 
-The authoring tree for every version lives in the [familyzoo](https://github.com/Johnesco/familyzoo) repo.
+## Engine
+
+Pinned to `@sharpee/*` **5.3.0** (Chord 3.6.0), held there by an `overrides` block: 5.3.1 publishes broken subpath exports and breaks `sharpee test`.
+
+The 0.9.x TypeScript edition this replaced is kept in [`legacy/`](./legacy).

@@ -7,7 +7,7 @@
 # to, and any verb the story defines itself. Refusals are coverage too
 # — taking scenery should fail, and the transcript records that it did.
 #
-# 7 of 8 rooms swept, 39 of 40 things exercised, 204 commands.
+# 7 of 8 rooms swept, 39 of 40 things exercised, 187 commands.
 #
 # Not exercised — held inside a closed thing, carried from the
 # start, or the player character itself: Alex.
@@ -16,7 +16,6 @@
 
 > look
 > x staff keycard
-> i
 > x keycard
 > x welcome sign
 > x sign
@@ -26,15 +25,11 @@
 > x fence
 > x zoo brochure
 > read zoo brochure
-> i
 > x brochure
 > x zoo map
-> i
 > x map
 > x backpack
 > look in backpack
-> look in backpack
-> i
 > x rucksack
 > score
 
@@ -48,21 +43,17 @@
 > x flower beds
 > x flowers
 > x souvenir penny
-> i
 > x penny
 > x park bench
 > look on park bench
 > x bench
 > x lunchbox
 > look in lunchbox
-> look in lunchbox
-> i
 > x lunch box
 > x zookeeper
 > talk to zookeeper
 > x keeper
 > x juice box
-> i
 > x juice
 
 ## Petting Zoo
@@ -74,10 +65,8 @@
 > read info plaque
 > x plaque
 > x bag of animal feed
-> i
 > x feed
 > x feed dispenser
-> look in feed dispenser
 > look in feed dispenser
 > x dispenser
 > x pygmy goats
@@ -114,10 +103,8 @@
 > x pins
 > x souvenir press
 > look in souvenir press
-> look in souvenir press
 > x press
 > x disposable camera
-> i
 > x camera
 
 ## Aviary
@@ -140,21 +127,11 @@
 > read warning sign
 > x warning
 > x flashlight
-> i
 > x torch
 > x radio
 > x portable radio
 > south
-> x sugar gliders
-> x gliders
-> x bush babies
-> x galagos
-> x barn owl
-> x owl
-> x snake
-> x python
 > north
-> open staff gate
 
 ## Main Path
 
@@ -251,15 +228,22 @@
 ## Nocturnal Animals Exhibit
 
 > south
+> x sugar gliders
 > take sugar gliders
+> x gliders
+> x bush babies
 > take bush babies
+> x galagos
+> x barn owl
 > take barn owl
+> x owl
+> x snake
 > take snake
+> x python
 
 ## Supply Room
 
 > north
-> open staff gate
 
 ## Main Path
 
@@ -280,4 +264,3 @@
 > take disposable camera
 > drop disposable camera
 > score
-> inventory

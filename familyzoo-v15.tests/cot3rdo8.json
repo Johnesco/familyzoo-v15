@@ -1,10 +1,6 @@
 {
-  "version": 1,
-  "story": "familyzoo-v15",
-  "seed": 42,
   "cards": [
     {
-      "type": "opening",
       "assertions": {
         "channels": [
           {
@@ -16,54 +12,62 @@
             "is": "Sharpee tutorial step 15 — `use scoring`, `score ... worth`, and `award`."
           }
         ]
-      }
+      },
+      "id": "8ldqhmtr",
+      "type": "opening"
     },
     {
-      "type": "boot",
       "assertions": {
         "contains": [
           "Zoo Entrance",
           "Your family piles out of the car, buzzing with excitement — a whole day at the zoo! You st"
         ]
-      }
+      },
+      "id": "yorxgzau",
+      "type": "boot"
     },
     {
-      "type": "turn",
-      "command": "score",
       "assertions": {
         "contains": [
           "You have scored 0 out of a possible 80."
         ]
-      }
+      },
+      "command": "score",
+      "id": "dgemdoaq",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "south",
       "assertions": {
         "contains": [
           "Main Path",
           "A wide gravel path winds through the heart of the zoo. Colorful direction signs point ever"
         ]
-      }
+      },
+      "command": "south",
+      "id": "59i6r901",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "east",
       "assertions": {
         "contains": [
           "Petting Zoo",
           "A cheerful open-air enclosure that smells of warm hay and fur. A feed dispenser is mounted"
         ]
-      }
+      },
+      "command": "east",
+      "id": "nu99znbo",
+      "type": "turn"
     },
     {
-      "type": "turn",
-      "command": "score",
       "assertions": {
         "contains": [
           "You have scored 5 out of a possible 80."
         ]
-      }
+      },
+      "command": "score",
+      "id": "ycgguwjs",
+      "type": "turn"
     }
-  ]
+  ],
+  "id": "cot3rdo8"
 }

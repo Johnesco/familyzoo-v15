@@ -14,7 +14,7 @@ Step 15 of sixteen in the [Family Zoo](https://github.com/Johnesco/familyzoo) tu
 
 ## The source
 
-The whole step is one file: [`familyzoo-v15.story`](./familyzoo-v15.story) — the step before it plus the ideas above. The chapter that walks through it is [`docs/v15-scoring-endgame.md`](./docs/v15-scoring-endgame.md).
+The whole step is one file: [`familyzoo-v15.story`](./familyzoo-v15.story) — the step before it plus the ideas above. Where it sits in the trail is on the [group page](https://johnesco.github.io/familyzoo/#familyzoo-v15).
 
 ## Playing and testing
 

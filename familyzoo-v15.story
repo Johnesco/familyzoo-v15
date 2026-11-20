@@ -640,7 +640,7 @@ create the rabbits
   end after
 
 define sequence feeding time
-  at turn 11
+  at turn 10
     change the pygmy goats to hungry
     phrase zoo-feeding-time-announced
       *DING DONG* "It's FEEDING TIME at the Petting Zoo! Come watch our
